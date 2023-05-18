@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: "Macondo", cursive;
+  color: black;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-lyout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-section {
+  height: calc(100vh - 3rem);
+}
+
+.home {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-content: flex-end;
+  z-index: 1;
+}
+
+.home__title {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  font-size: 3rem;
+  font-weight: 900;
+  z-index: 100;
+}
+
+.wonder-woman-img,
+.black-widow,
+.wanda {
+  position: absolute;
+  top: 10%;
+  left: 22%;
+  width: 235px;
+  height: 353px;
+  z-index: 10;
+}
+
+.main-section:hover {
+  cursor: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .main-section {
+    height: 100vh;
+  }
+
+  .home {
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .home__title {
+    top: 40%;
+    left: 23%;
+    text-align: justify;
+  }
+
+  .wonder-woman-img,
+  .black-widow,
+  .wanda {
+    width: 359px;
+    height: 539px;
+    top: 18%;
+    left: 43%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-lyout {
+    margin: 0 auto;
+  }
+}

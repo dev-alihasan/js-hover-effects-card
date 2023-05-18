@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset=UTF-8 />
+    <meta name=viewport content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="https://alihasan.ml/">
+    <link rel=stylesheet href="assets/css/style.css" />
+    <link rel=stylesheet href="assets/css/swiper.css"/>
+    <title></title>
+  </head>
+  <body>
+    <div class="swiper mySwiper">
+      <div class=swiper-wrapper>
+        <div class=swiper-slide>
+          <main class="main-section grid-lyout">
+            <div class=home>
+              <h1 class=home__title> who <br /> is <br />your <br />mommy&#128523; </h1>
+              <div class=wonder-woman-img></div>
+            </div>
+          </main>
+        </div>
+        <div class=swiper-slide>
+          <main class="main-section grid-lyout">
+            <div class=home>
+              <h1 class=home__title> I <br /> am <br />your <br />mommy&#128527; </h1>
+              <div class=black-widow></div>
+            </div>
+          </main>
+        </div>
+        <div class=swiper-slide>
+          <main class="main-section grid-lyout">
+            <div class=home>
+              <h1 class=home__title> No <br /> your <br />mommy is <br />here&#128536; </h1>
+              <div class=wanda></div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class=swiper-button-next style="border: solid;border-radius: 1em;padding: 1.5em;"></div>
+      <div class=swiper-button-prev style="border: solid;border-radius: 1em;padding: 1.5em;"></div>
+    </div>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin=anonymous></script>
+    <script src=assets/js/app.js></script>
+    <script src="assets/js/transaction.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction"
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
+  </body>
+</html>
